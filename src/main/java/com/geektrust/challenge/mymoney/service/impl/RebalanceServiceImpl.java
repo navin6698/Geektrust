@@ -20,13 +20,11 @@ public class RebalanceServiceImpl implements MyMoneyService {
 
         if(currentPortfolioMap.containsKey(Constants.DECEMBER)) {
             rebalancedAmount = currentPortfolioMap.get(Constants.DECEMBER);
-            System.out.printf("%d, %d, %d",rebalancedAmount.getEquityAllocation(),rebalancedAmount.getDebtAllocation(),rebalancedAmount.getGoldAllocation());
-            System.out.println();
+            System.out.println(rebalancedAmount.getEquityAllocation()+" "+rebalancedAmount.getDebtAllocation()+" "+rebalancedAmount.getGoldAllocation());
         }
         else if(currentPortfolioMap.containsKey(Constants.JUNE)){
             rebalancedAmount = currentPortfolioMap.get(Constants.JUNE);
-            System.out.printf("%d, %d, %d",rebalancedAmount.getEquityAllocation(),rebalancedAmount.getDebtAllocation(),rebalancedAmount.getGoldAllocation());
-            System.out.println();
+            System.out.println(rebalancedAmount.getEquityAllocation()+" "+rebalancedAmount.getDebtAllocation()+" "+rebalancedAmount.getGoldAllocation());
         }
         else {
             System.out.println(Constants.CANT_REBALANCE);

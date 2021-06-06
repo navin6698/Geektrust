@@ -22,8 +22,7 @@ public class BalanceServiceImpl implements MyMoneyService  {
             int equity = currentPortfolioMap.get(month).getEquityAllocation();
             int debt = currentPortfolioMap.get(month).getDebtAllocation();
             int gold = currentPortfolioMap.get(month).getGoldAllocation();
-            System.out.printf("%d, %d, %d",equity,debt,gold);
-            System.out.println();
+            System.out.println(equity+" "+ debt+" "+gold);
         }
         else {
             System.out.println("Balance not available for a given month");
