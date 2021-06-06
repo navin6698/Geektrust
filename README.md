@@ -73,3 +73,7 @@ Model package has necessary models
   
 Util class is used for basic operations which are common across classes
 
+Enhancement -
+When we want to add a new type of fund, then in that case lot of modifition is required.
+The existing implemtation for funds can be extended or change to be interface and different implementation for each fund.
+
